@@ -49,7 +49,7 @@ namespace WebApplication2.Controllers
                         issuer: "http://localhost:5000",
                         audience: "http://localhost:5000",
                         claims: new List<Claim>() {
-                        new Claim("role","admin")},
+                        new Claim("role","admin"),new Claim("name",admin.FullName)},
                         expires: DateTime.Now.AddMinutes(5),
                         signingCredentials: signinCredentials
                     );
