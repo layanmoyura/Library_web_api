@@ -18,5 +18,5 @@ namespace WebApplication2.Model
         public string LastEditDate { get; set; }
         public string Link { get; set; }
         public string CoverImage { get; set; }
-    }
+    } 
 }
